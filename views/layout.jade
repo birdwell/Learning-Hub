@@ -1,10 +1,13 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/foundation-5.5.2/css/foundation.css')
-    script(src='/stylesheets/foundation-5.5.2/js/foundation.min.js')
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='/stylesheets/foundation-5.5.2/css/foundation.css')
+        script(src='/stylesheets/foundation-5.5.2/js/foundation.min.js')
 
-  body
-    block content
+    body
+        block content
+    footer
+        block footer
+            include footer.jade

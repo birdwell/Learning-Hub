@@ -1,8 +1,12 @@
 extends layout
 
 block content
-    h1= title
-    p Welcome to #{title}
-    p
-        a(href="/courses")
-            | See Coursera Courses
+    a(href="/courses")
+        | See Coursera Courses
+        block content
+            .row
+                .large-12.columns
+                    .panel
+                        h1= title
+            .row
+                include nav.jade
