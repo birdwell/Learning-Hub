@@ -1,0 +1,22 @@
+{
+  "name": "learning-hub",
+  "version": "1.0.0",
+  "description": "a place to learn",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/birdwell/Learning-Hub.git"
+  },
+  "author": "Josh & Casper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/birdwell/Learning-Hub/issues"
+  },
+  "homepage": "https://github.com/birdwell/Learning-Hub#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
