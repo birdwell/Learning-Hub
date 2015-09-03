@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    .row
+        .large-12.columns
+            .panel
+                h1 Coursera Courses
+    .row
+        include nav.jade
+        // Main Feed
+        .large-9.columns
+            // Course Entry
+            each course in elements       
+                .row
+                    .large-2.columns.small-3
+                        img(src='./images/cousera.png')
+                    .large-10.columns
+                        p #{course.name}
+                hr                
+               
