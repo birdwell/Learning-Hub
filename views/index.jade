@@ -9,16 +9,12 @@ block content
                 .large-9.columns
                     .row
                         .medium-4.columns
-                            .card
-                                .image
-                                    a(href='http://connect.nextthought.com')
-                                        img(src='images/nextthought.png')
-                                .action
-                                    a(href='http://connect.nextthought.com') NextThought
-                            br
-                            .card
-                                .image
-                                    a(href='http://codeschool.com')
-                                        img(src='images/code-school-logo.jpg')
-                                .action
-                                    a(href='http://codeschool.com') CodeSchool
+                            each hub in hubs
+                                .card
+                                    .image
+                                        a(href=hub.link)
+                                            img(src=hub.img)
+                                    .action
+                                        a(href='http://connect.nextthought.com') #{hub.name}
+                                br
+                    

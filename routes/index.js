@@ -3,16 +3,20 @@ var https = require('https');
 var router = express.Router();
 var passport = require('passport');
 var data = require('../public/resources/courses.json');
+var hubs = require('../public/resources/hubs.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', {user: req.user});
+    if(req.user){
+        hubs.user = req.user;
+    }
+
+  res.render('index', hubs);
 });
 
 router.get('/courses', function(req, res, next) {
     if(req.user){
         data.user = req.user;
-        console.log(data);
     }
 
     res.render('courses', data);

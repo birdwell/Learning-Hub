@@ -1,0 +1,11 @@
+{
+    "hubs": [{
+        "link": "http://connect.nextthought.com",
+        "img": "images/nextthought.png",
+        "name": "NextThought"
+    }, {
+        "link": "http://codeschool.com",
+        "img": "images/code-school-logo.jpg",
+        "name": "CodeSchool"
+    }]
+}
