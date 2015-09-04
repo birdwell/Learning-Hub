@@ -18,10 +18,11 @@
     color: #87d37c;
     transition: all .3s ease-in-out;
 }
-.menu .inline-list a.twitter:hover {
+.menu .inline-list a.twitter:hover, .menu .inline-list a.logout:hover{
     color: none;
     transition: none;
 }
+
 .menu .inline-list .active a {
     color: #87d37c;
 }
@@ -44,8 +45,9 @@
     .menu a:hover {
         border-bottom: 2px solid #87d37c;
     }
-    .menu a.twitter:hover {
+    .menu a.twitter:hover, .menu .inline-list a.logout:hover {
         border-bottom: none;
+        color: white;
     }
 }
 .menu .account-action {

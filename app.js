@@ -95,6 +95,11 @@ app.get('/login',
     res.render('index', { title: 'Learning Hub',  user: req.user});
   });
 
+app.get('/logout', function(req, res){
+    req.logout();
+    res.redirect('/');
+});
+
 app.use('/', routes);
 app.use('/users', users);
 

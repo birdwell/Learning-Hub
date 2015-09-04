@@ -1,7 +1,6 @@
 var express = require('express');
 var https = require('https');
 var router = express.Router();
-var Q = require('q');
 var passport = require('passport');
 var data = require('../public/javascript/courses.json');
 
@@ -11,6 +10,11 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/courses', function(req, res, next) {
+    if(req.user){
+        data.user = req.user;
+        console.log(data);
+    }
+
     res.render('courses', data);
 });
 
