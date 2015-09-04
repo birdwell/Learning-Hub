@@ -5,9 +5,11 @@ html
         link(rel='stylesheet', href='/stylesheets/style.css')
         link(rel='stylesheet', href='/stylesheets/foundation-5.5.2/css/foundation.css')
         link(rel='stylesheet', href='/stylesheets/card.css')
+        link(rel='stylesheet', href='/stylesheets/navTop.css')
         script(src='/stylesheets/foundation-5.5.2/js/foundation.min.js')
-
     body
+        block nav
+            include navTop.jade
         block content
     footer
         block footer
