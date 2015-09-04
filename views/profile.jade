@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    .row
+        .large-12.columns
+            .panel
+                h1 Profile
+    .row
+        include nav.jade
+        // Main Feed
+        .large-9.columns
+            p #{user.displayName}
+            p #{user.username}
