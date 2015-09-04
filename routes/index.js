@@ -2,7 +2,7 @@ var express = require('express');
 var https = require('https');
 var router = express.Router();
 var passport = require('passport');
-var data = require('../public/javascript/courses.json');
+var data = require('../public/resources/courses.json');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
