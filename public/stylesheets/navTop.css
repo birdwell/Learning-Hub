@@ -22,7 +22,11 @@
     color: none;
     transition: none;
 }
-
+.menu .inline-list a.logout {
+    padding-left: 7.563rem;
+    padding-right: 7.563rem;
+    border-radius: 5px;
+}
 .menu .inline-list .active a {
     color: #87d37c;
 }
