@@ -16,6 +16,10 @@
     "morgan": "~1.6.1",
     "node-sass-middleware": "0.8.0",
     "serve-favicon": "~2.3.0",
-    "q": "~1.4.1"
+    "q": "~1.4.1",
+    "connect-ensure-login": "^0.1.1",
+    "passport": "^0.2.2",
+    "passport-twitter": "^1.0.3",
+    "express-session": "^1.11.3"
   }
 }
